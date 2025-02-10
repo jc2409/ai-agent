@@ -1,0 +1,5 @@
+.env
+demo/
+llama.cpp/
+models/
+Modelfile
