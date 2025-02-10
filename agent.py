@@ -108,7 +108,7 @@ settings.temperature = 0.65
 # settings.top_p = 0.85
 # settings.top_k = 60
 # settings.tfs_z = 0.95
-# settings.max_tokens = 4096
+settings.max_tokens = 4096
 
 output_settings = LlmStructuredOutputSettings.from_functions(
     [get_current_time, open_camcribs, calculator], allow_parallel_function_calling=True
@@ -139,7 +139,6 @@ def run_web_search_agent():
     print("Response from AI Agent:")
     print(result)
     print("----------------------------------------------------------------")
+
+if __name__ == '__main__':
     run_web_search_agent()
-
-
-run_web_search_agent()
